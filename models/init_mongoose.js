@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://narendraiiitl:narendra@upload-y1od8.mongodb.net/profile?retryWrites=true&w=majority")
+require('dotenv').config();
+mongoose.connect(process.env.mongouri2)
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);

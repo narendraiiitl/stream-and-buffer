@@ -11,7 +11,7 @@ const bodyParser = require('body-parser');
 const { Grid } = require('gridfs-stream');
 //mongo uri
 
-const mongouri = "mongodb+srv://narendraiiitl:narendra@upload-y1od8.mongodb.net/content?retryWrites=true&w=majority"
+const mongouri = process.env.mongouri;
 const conn = mongoose.createConnection(mongouri,
     { 
         useNewUrlParser: true, 
