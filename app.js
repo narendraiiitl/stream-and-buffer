@@ -10,7 +10,7 @@ const methodOverride = require('method-override');
 const bodyParser = require('body-parser');
 const { Grid } = require('gridfs-stream');
 //mongo uri
-
+require(dotenv).config();
 const mongouri = process.env.mongouri;
 const conn = mongoose.createConnection(mongouri,
     { 
